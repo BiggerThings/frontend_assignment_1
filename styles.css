@@ -141,3 +141,26 @@ body {
     border-radius: 10%;
     border: 3px solid #3882f6;
 }
+
+.testimonials {
+    padding: 3rem 15%;
+    background-color: #E5E7EB;
+    text-align: center;
+}
+
+.testimonials p {
+    padding: 0 5rem;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    color: #1f2937;
+}
+
+.testimonials h2 {
+    padding: 0 5rem;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: right;
+    color: #1f2937;
+}
