@@ -76,7 +76,6 @@ body {
 }
 
 .hero > div {
-    justify-content: center;
     flex: 1;
 }
 
