@@ -1,14 +1,46 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF;
+}
+
 .logo {
     font-size: 24px;
-    font-weight: bold;
-    color: #fff;
+    font-weight: 400;
+    color: #F9FAF8;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1rem 15%;
     background-color: #1f2937;
 }
 
@@ -19,7 +51,7 @@
 }
 
 .nav-container a {
-    color: #e5e7eb;
+    color: #E5E7EB;
     text-decoration: none;
     font-size: 18px;
 }
@@ -28,21 +60,141 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1rem 15%;
     background-color: #1f2937;
     color: #e5e7eb;
     font-size: 18px;
 }
 
-.main {
-    padding: 20px;
-    background-color: #1f2937;
-    color: #fff;
+.hero {
     display: flex;
+    padding: 5rem 15%;
+    background-color: #1f2937;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-.section-title {
+.hero > div {
+    flex: 1;
+}
+
+.hero img {
+    max-width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    color: #F9FAF8;
     font-size: 48px;
     font-weight: 800;
 }
 
+.hero p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+#sign-up {
+    padding: 6px 28px;
+    font-size: 18px;
+    background-color: #3882F6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sign-up:hover {
+    background-color: #2c6cd3;
+}
+
+.information {
+    padding: 5rem 15%;
+    background-color: #F9FAF8;
+    text-align: center;
+}
+
+.information h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.information ul {
+    display: flex;
+    gap: 1rem;
+    padding: 0 5rem;
+}
+
+.information ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1f2937;
+}
+
+.information div {
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    border: 3px solid #3882f6;
+}
+
+.testimonials {
+    padding: 5rem 15%;
+    background-color: #E5E7EB;
+    text-align: center;
+}
+
+.testimonials p {
+    padding: 0 5rem;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    color: #1f2937;
+}
+
+.testimonials h2 {
+    padding: 0 5rem;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: right;
+    color: #1f2937;
+}
+
+.cta {
+    padding: 5rem 15%;
+    text-align: center;
+}
+
+.cta-container {
+    padding: 20px 10rem;
+    display: flex;
+    background-color: #3882F6;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cta-container:first-child {
+    text-align: left;
+}
+
+.cta button {
+    padding: 6px 28px;
+    font-size: 18px;
+    background-color: #3882F6;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #FFF;
+    color: #3882F6;
+}
