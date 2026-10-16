@@ -42,6 +42,9 @@ body {
     align-items: center;
     padding: 1rem 15%;
     background-color: #1f2937;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .nav-container {
@@ -54,6 +57,15 @@ body {
     color: #E5E7EB;
     text-decoration: none;
     font-size: 18px;
+}
+
+.nav-toggle {
+    display: none;
+    color: #F9FAF8;
+}
+
+.nav-toggle-checkbox {
+    display: none;
 }
 
 .footer {
@@ -299,41 +311,102 @@ body {
 }
 
 @media (max-width: 768px) {
+    .header:has(.nav-toggle-checkbox:checked) {
+        box-shadow: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 2rem 15%;
+        box-sizing: border-box;
+        overflow-y: hidden;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+        width: 100%;
+        background-color: #1f2937;
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-container {
+        display: flex;
+    }
+
     .hero {
         flex-direction: column;
         text-align: center;
+        padding: 3rem 10%;
+    }
+
+    .hero h1 {
+        margin: 0;
     }
 
     .hero > div {
         flex: unset;
     }
 
+    .information {
+        padding: 3rem 10%;
+    }
+
     .information ul {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0;
+    }
+
+    /* .information ul li {
+        flex: 0 0 33.33%;
+    } */
+
+    .testimonials {
+        padding: 3rem 10%;
     }
 
     .testimonials p,
     .testimonials h2 {
         text-align: center;
         padding: 0;
+        font-size: 24px;
+    }
+
+    .cta {
+        padding: 3rem 10%;
     }
 
     .cta-container {
         flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .cta-container:first-child {
         text-align: center;
     }
 }
 
 @media (max-width: 375px) {
     .header {
-        flex-direction: column;
         text-align: center;
+        padding: 10px 10%;
+    }
+
+    .logo {
+        font-size: 20px;
     }
 
     .nav-container {
         flex-direction: column;
         gap: 20px;
+        align-items: center;
     }
 
     .hero h1 {
@@ -346,7 +419,6 @@ body {
 
     .testimonials p,
     .testimonials h2 {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
-
