@@ -121,24 +121,69 @@ body {
     color: #1f2937;
 }
 
+.information ul h3 {
+    text-align: left;
+    margin: 10px;
+}
+
 .information ul {
     display: flex;
     gap: 1rem;
-    padding: 0 5rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 1px;
+}
+
+.information ul::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: #1F2937;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.information ul::scroll-button(*):hover,
+.information ul::scroll-button(*):focus {
+  opacity: 1;
+}
+
+.information ul::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+.information ul::scroll-button(*):disabled {
+  color: #E5E7EB;
+  cursor: unset;
+}
+
+.information ul::scroll-button(left) {
+  content: "◄" / "Previous";
+}
+
+.information ul::scroll-button(right) {
+  content: "►" / "Next";
 }
 
 .information ul li {
+    background-color: #E5E7EB;
+    border: 1px solid #D1D5DB;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     color: #1f2937;
+    flex: 0 0 30%;
+    scroll-snap-align: center;
+    padding: 1%;
 }
 
 .information div {
     height: 200px;
     width: 200px;
+    margin: 20px;
     border-radius: 10%;
     border: 3px solid #3882f6;
+    align-self: center;
 }
 
 .testimonials {
@@ -197,4 +242,56 @@ body {
 .cta button:hover {
     background-color: #FFF;
     color: #3882F6;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero > div {
+        flex: unset;
+    }
+
+    .information ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .testimonials p,
+    .testimonials h2 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .information h1 {
+        font-size: 28px;
+    }
+
+    .testimonials p,
+    .testimonials h2 {
+        font-size: 24px;
+    }
 }
