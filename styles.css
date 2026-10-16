@@ -194,8 +194,12 @@ body {
     width: 200px;
     margin: 20px;
     border-radius: 10%;
-    border: 3px solid #3882f6;
     align-self: center;
+}
+
+.information div i {
+    font-size: 200px;
+    color: #1F2937;
 }
 
 .testimonials {
