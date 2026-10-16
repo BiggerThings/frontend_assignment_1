@@ -87,7 +87,7 @@ body {
     gap: 2rem;
 }
 
-.hero > div {
+.hero>div {
     flex: 1;
 }
 
@@ -147,34 +147,34 @@ body {
 }
 
 .information ul::scroll-button(*) {
-  border: 0;
-  font-size: 2rem;
-  background: none;
-  color: #1F2937;
-  opacity: 0.7;
-  cursor: pointer;
+    border: 0;
+    font-size: 2rem;
+    background: none;
+    color: #1F2937;
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .information ul::scroll-button(*):hover,
 .information ul::scroll-button(*):focus {
-  opacity: 1;
+    opacity: 1;
 }
 
 .information ul::scroll-button(*):active {
-  translate: 1px 1px;
+    translate: 1px 1px;
 }
 
 .information ul::scroll-button(*):disabled {
-  color: #E5E7EB;
-  cursor: unset;
+    color: #E5E7EB;
+    cursor: unset;
 }
 
 .information ul::scroll-button(left) {
-  content: "◄" / "Previous";
+    content: "◄" / "Previous";
 }
 
 .information ul::scroll-button(right) {
-  content: "►" / "Next";
+    content: "►" / "Next";
 }
 
 .information ul li {
@@ -314,6 +314,10 @@ body {
     text-align: left;
 }
 
+.contact-form-container {
+    text-align: left;
+}
+
 @media (max-width: 768px) {
     .header:has(.nav-toggle-checkbox:checked) {
         box-shadow: none;
@@ -340,7 +344,7 @@ body {
         background-color: #1f2937;
     }
 
-    .nav-toggle-checkbox:checked ~ .nav-container {
+    .nav-toggle-checkbox:checked~.nav-container {
         display: flex;
     }
 
@@ -354,7 +358,7 @@ body {
         margin: 0;
     }
 
-    .hero > div {
+    .hero>div {
         flex: unset;
     }
 
@@ -394,6 +398,10 @@ body {
 
     .cta-container:first-child {
         text-align: center;
+    }
+
+    .contact-form-container {
+        width: 100%;
     }
 }
 
