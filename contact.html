@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="brand">
+            <i class="fa fa-leaf"></i>
+            <a href="index.html" class="brand-link">
+                <h1 class="logo">Flowstate</h1>
+            </a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+        <label for="nav-toggle" class="nav-toggle">
+            <i class="fa fa-bars"></i>
+        </label>
+        <div class="nav-container">
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+            <nav>
+                <a href="about.html">About</a>
+            </nav>
+            <nav>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div id="contact-content">
+                <div id="contact-text">
+                    <h2>Let's talk.</h2>
+                    <p>Whether you have a question, need a hand or simply want to tell us what you think, we'd love to
+                        hear from you.</p>
+                </div>
+                <div id="contact-text">
+                    <h2>Visit us</h2>
+                    <p>Flowstate Technologies</p>
+                    <p>123 Innovation Street</p>
+                    <p>London, EC2A 4BX</p>
+                    <p>United Kingdom</p>
+                </div>
+                <div id="contact-text">
+                    <h2>Email us</h2>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: hello@flowstate.example</p>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form class=" contact-form" action="submit_form.php" method="post">
+                    <label for="name">Name</label>
+                    <input id="form-input" type="text" id="name" name="name" required>
+                    <label for="email">Email*</label>
+                    <input id="form-input" type="email" id="email" name="email" required>
+                    <label for="subject">Subject*</label>
+                    <input id="form-input" type="text" id="subject" name="subject" required>
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button class="submit-form-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 My Website</p>
+    </footer>
+</body>
+
+</html>
