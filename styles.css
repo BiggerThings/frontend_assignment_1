@@ -46,6 +46,14 @@ body {
     font-size: 24px;
     font-weight: 400;
     color: var(--color-light);
+    margin: 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-light);
 }
 
 .header {
@@ -150,6 +158,10 @@ body {
     margin: 10px;
 }
 
+.information ul h4 {
+    margin: 0;
+}
+
 .information ul {
     display: flex;
     gap: 1rem;
@@ -229,11 +241,18 @@ body {
     color: var(--color-dark);
 }
 
-.testimonials h2 {
+.testimonials h2, .testimonials h3 {
     padding: 0 5rem;
     font-size: 36px;
     font-weight: 800;
     text-align: right;
+    color: var(--color-dark);
+}
+
+.testimonials h3 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;  
     color: var(--color-dark);
 }
 
