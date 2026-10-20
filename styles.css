@@ -259,6 +259,50 @@ main {
     color: var(--color-dark);
 }
 
+.features {
+    padding: 5rem 15%;
+    background-color: var(--color-light);
+}
+
+.features h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 5rem;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    flex: 1 1 calc(25% - 1rem);
+    margin: 0;
+    color: var(--color-dark);
+    text-align: center;
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 10px;
+    color: var(--color-accent);
+    font-size: 5rem;
+}
+
 .testimonials {
     padding: 5rem 15%;
     background-color: var(--color-gray);
@@ -474,11 +518,14 @@ main {
 }
 
 .about-principles li {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     gap: 2rem;
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--color-divider);
+}
+
+.about-principles li > * {
+    flex: 1;
 }
 
 .about-principles li:last-child {
@@ -562,9 +609,21 @@ main {
         padding: 3rem 10%;
     }
 
+    .features {
+        padding: 3rem 10%;
+    }
+
+    .feature-list {
+        padding: 0;
+    }
+
     .information ul {
         flex-direction: row;
         padding: 0;
+    }
+
+    .feature-card {
+        flex-basis: calc(50% - 0.5rem);
     }
 
     /* .information ul li {
@@ -610,8 +669,12 @@ main {
     }
 
     .about-principles li {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .about-principles li > * {
+        flex: initial;
     }
 }
 
@@ -639,6 +702,10 @@ main {
     .about-team h1,
     .about-principles h1 {
         font-size: 28px;
+    }
+
+    .feature-card {
+        flex-basis: 100%;
     }
 
     .testimonials blockquote,
