@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Home | Flowstate</title>
 </head>
 
 <body>
@@ -21,17 +21,11 @@
         <label for="nav-toggle" class="nav-toggle">
             <i class="fa fa-bars"></i>
         </label>
-        <div class="nav-container">
-            <nav>
-                <a href="index.html">Home</a>
-            </nav>
-            <nav>
-                <a href="about.html">About</a>
-            </nav>
-            <nav>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+        <nav class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <main>
         <section class="hero">
@@ -40,78 +34,43 @@
                 <p>Meet Flowstate, your personal AI productivity assistant. Organise your tasks, simplify your schedule
                     and focus on
                     what matters most, all in one place.</p>
-                <a href="contact.html"><button id="sign-up">Get started for free</button></a>
+                <a class="sign-up-link" href="contact.html">Get started for free</a>
             </div>
-            <div>
-                <picture>
-                    <source srcset="images/home/productivity-small.jpg" media="(max-width: 375px)">
-                    <source srcset="images/home/productivity-medium.jpg" media="(max-width: 768px)">
-                    <img src="images/home/productivity-large.jpg" alt="Lake surrounded by mountains">
-                </picture>
-            </div>
+            <picture>
+                <source srcset="images/home/productivity-small.jpg" media="(max-width: 375px)">
+                <source srcset="images/home/productivity-medium.jpg" media="(max-width: 768px)">
+                <img src="images/home/productivity-large.jpg" alt="Lake surrounded by mountains">
+            </picture>
         </section>
-        <section class="information">
-            <!-- div containers have been added as a placeholder for now -->
-            <h1>Information Section</h1>
-            <ul>
-                <li>
-                    <h3>01/</h3>
-                    <div><i class="fa fa-globe"></i></div>
-                    <h4>One Connected Workspace</h4>
-                    <p>Bring your tasks, projects and notes together in one organised space.</p>
-                </li>
-                <li>
-                    <h3>02/</h3>
-                    <div><i class="fa fa-calendar"></i></div>
-                    <h4>Smarter Scheduling</h4>
-                    <p>Build a realistic schedule around your priorities and deadlines.</p>
-                </li>
-                <li>
-                    <h3>03/</h3>
-                    <div><i class="fa fa-compass"></i></div>
-                    <h4>AI-Powered Guidance</h4>
-                    <p>Get personalised suggestions on what to work on next.</p>
-                </li>
-                <li>
-                    <h3>04/</h3>
-                    <div><i class="fa fa-paper-plane"></i></div>
-                    <h4>Effortless Task Planning</h4>
-                    <p>Turn your ideas and goals into clear, actionable tasks.</p>
-                </li>
-                <li>
-                    <h3>05/</h3>
-                    <div><i class="fa fa-bar-chart"></i></div>
-                    <h4>Time & Resource Insights</h4>
-                    <p>Understand where your time goes and make better use of it.</p>
-                </li>
-                <li>
-                    <h3>06/</h3>
-                    <div><i class="fa fa-gears"></i></div>
-                    <h4>Automated Workflows</h4>
-                    <p>Let AI handle repetitive planning and organisation.</p>
-                </li>
-                <li>
-                    <h3>07/</h3>
-                    <div><i class="fa fa-hourglass"></i></div>
-                    <h4>Focus Time</h4>
-                    <p>Protect your time for deep work and minimise distractions.</p>
-                </li>
-                <li>
-                    <h3>08/</h3>
-                    <div><i class="fa fa-thumbs-up"></i></div>
-                    <h4>Progress & Achievements</h4>
-                    <p>Track your progress, recognise your wins and build momentum.</p>
-                </li>
-            </ul>
+        <section class="features">
+            <h1>How Flowstate works</h1>
+            <div class="feature-list">
+                <figure class="feature-card">
+                    <div class="feature-icon"><i class="fa fa-tasks"></i></div>
+                    <figcaption>Add your tasks, deadlines and goals to one organised workspace. No more scattered notes or forgotten priorities.</figcaption>
+                </figure>
+                <figure class="feature-card">
+                    <div class="feature-icon"><i class="fa fa-calendar-check-o"></i></div>
+                    <figcaption>Flowstate analyses your workload and helps prioritise tasks, creating a realistic daily plan around what matters most.</figcaption>
+                </figure>
+                <figure class="feature-card">
+                    <div class="feature-icon"><i class="fa fa-bullseye"></i></div>
+                    <figcaption>Work through your personalised plan one task at a time. Flowstate helps you stay on track and avoid feeling overwhelmed.</figcaption>
+                </figure>
+                <figure class="feature-card">
+                    <div class="feature-icon"><i class="fa fa-line-chart"></i></div>
+                    <figcaption>See what you've accomplished, celebrate your wins and use your insights to build better habits for tomorrow.</figcaption>
+                </figure>
+            </div>
         </section>
         <section class="testimonials">
-            <p>"Before Flowstate, I felt like I was constantly busy but never really getting anywhere. I'd spend ages
+            <blockquote>"Before Flowstate, I felt like I was constantly busy but never really getting anywhere. I'd spend ages
                 planning my day,
                 jumping between tasks and worrying about everything I still had to do. Now, I have a much clearer idea
                 of what needs
                 my attention and can focus on making real progress. It's taken so much of the stress out of my working
                 day, and I
-                finally feel like I'm in control of my time rather than the other way around."</p>
+                finally feel like I'm in control of my time rather than the other way around."</blockquote>
             <h2>- Sophie Bennett</h2>
             <h3>Freelance Designer</h3>
         </section>
@@ -122,13 +81,18 @@
                     <p>Less time organising. Less time worrying. More time doing the work that matters.</p>
                 </div>
                 <div>
-                    <a href="contact.html"><button>Start your free trial</button></a>
+                    <a class="cta-link" href="contact.html">Start your free trial</a>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <p>&copy; 2026 My Website</p>
+        <p>&copy; 2026 Flowstate</p>
+        <nav class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </footer>
 </body>
 
