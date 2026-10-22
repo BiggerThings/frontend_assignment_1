@@ -457,6 +457,11 @@ main {
     font-size: 18px;
 }
 
+.about-team>h1,
+.about-team>p {
+    text-align: center;
+}
+
 .about-team-card {
     flex: 1;
     display: flex;
@@ -510,6 +515,10 @@ main {
 
 .about-principles h1 {
     color: var(--color-light);
+}
+
+.about-principles>h1 {
+    text-align: center;
 }
 
 .about-principles ul {
